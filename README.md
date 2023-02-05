@@ -1,13 +1,13 @@
 # deno-template
 
-This is a repository for sample [Deno](https://deno.land/) app deployed on Zeabur.
-In this repository, there are two examples:
+- This is a repository for sample [Deno](https://deno.land/) app deployed on Zeabur.
+- In this repository, there are two examples:
     - For [Fresh framework](https://fresh.deno.dev/), please refer to  `./fresh-demo`
     - For [Typescript](https://www.typescriptlang.org/), please refer to `./typescript-demo`
 
-## `fresh-demo`
+### `fresh-demo`
 
-- Follow the commands to bootstrap your Fresh project
+- Follow the commands to bootstrap your Fresh project:
 
 ``` shell
 deno run -A -r https://fresh.deno.dev my-project
@@ -21,9 +21,10 @@ deno task start
 start(manifest, { plugins: [twindPlugin(twindConfig)], port: Deno.env.get("PORT")}, );
 ```
 
+- To run locally, copy `.env.defaults` to the new file `.env`, and assign the port that you would like to run your web application.
 - Don't add `fresh.gen.ts` to your `.gitignore` file.
 
-## `typescript-demo`
+### `typescript-demo`
 
 - Use `Deno.env.get("PORT")` in your serving function.
 
@@ -46,4 +47,5 @@ serve(handler, { port: Deno.env.get("PORT") });
   }
 }
 
-``
+```
+- To run locally, copy `.env.defaults` to the new file `.env`, and assign the port that you would like to run your web application.
